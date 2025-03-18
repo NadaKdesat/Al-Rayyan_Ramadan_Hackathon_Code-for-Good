@@ -1,0 +1,175 @@
+/* إعادة تعيين القيم الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ضبط الخلفية */
+body {
+    background: url('/img/profile.png') no-repeat center center;
+    background-size: cover;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+/* الحاوية الرئيسية */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    padding-top: 20px;
+}
+
+/* حاوية البيانات الشخصية */
+.profile-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+/* حاوية التبرعات */
+.donation-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* العناوين */
+h2, h3 {
+    color: #b56f20;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* الحقول النصية */
+#profileDetails p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+#profileDetails span {
+    font-weight: bold;
+    color: #b56f20;
+}
+
+/* تحسين مظهر الجدول */
+.donation-table-container {
+    max-height: 400px; /* اجعل الجدول قابلًا للتمرير إذا كان طويلًا */
+    overflow-y: auto;
+}
+
+.donation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.donation-table th, .donation-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.donation-table th {
+    background-color: #b56f20;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.donation-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.donation-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.donation-table a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.donation-table a:hover {
+    text-decoration: underline;
+}
+
+/* زر تسجيل الخروج */
+button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* تحسين المظهر للهواتف */
+@media (max-width: 768px) {
+    .profile-box, .donation-box {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    #profileDetails p {
+        font-size: 1rem;
+    }
+
+    .donation-table th, .donation-table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+.btn {
+    background-color: #D98A29;
+    color: white;
+    padding: 0.6vw 0.8vw;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #b56f20;
+    transform: scale(1.05);
+}

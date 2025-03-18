@@ -1,0 +1,190 @@
+body{
+    font-family: "Fustat", sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+h1, h2, h3 {
+    color: #D98A29;
+}
+p {
+    color: #9D9584;
+}
+.navbar {
+    background-color: #D98A29 !important;
+    padding: 2px 0;
+}
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+.btn-main {
+    background-color: #EAE4CD;
+    color: #D98A29;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
+    font-weight: bold;
+}
+.btn-main:hover {
+    background-color: #9D9584;
+    color: white;
+    transform: scale(1.05);
+}
+.logo {
+    width: 13vw;
+    height: 5vw;
+    margin-right: -7vw;
+}
+.auth-buttons {
+    margin-right: auto;
+}
+/*--------------------------------------------------------------
+# header
+--------------------------------------------------------------*/
+.header {
+    /* background-image: url('ContactUsRayyan.jpg')repeat center top; */
+    padding: 140px 0 60px 0;
+    min-height: 30vh;
+    position: relative;
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+  }
+  
+  .header:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    /* inset: 0; */
+  }
+  
+  .header h2 {
+    font-size: 56px;
+    font-weight: 500;
+    /* color: #fff; */
+    color:#6c757d;
+  }
+  
+  .header h2 {
+    font-size: 56px;
+    font-weight: 500;
+    margin-top: 12%;
+    /* color: #fff; */
+    color:#6c757d;
+  }
+.header {
+    /* background-image: url('ContactUsRayyan.jpg')repeat center top; */
+    padding: 140px 0 60px 0;
+    min-height: 50vh;
+    position: relative;
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+  }
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-item {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+    padding: 20px 0 30px 0;
+    /* background-color: white; */
+    background-color: #EAE4CD;
+}
+
+    .contact .info-item i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+        line-height: 0;
+        color: #D98A29;
+        border-radius: 50%;
+        border: 2px dotted #D98A29;
+    }
+
+    .contact .info-item h3 {
+        font-size: 20px;
+        color: #6c757d;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+
+    .contact .info-item p {
+        padding: 0;
+        line-height: 24px;
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #6c757d;
+    }
+
+
+
+ 
+
+
+
+
+    .contact .php-email-form input,
+    .contact .php-email-form textarea {
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 14px;
+    }
+
+       
+
+    .contact .php-email-form input {
+        height: 44px;
+    }
+    .contact input::placeholder,
+    .contact textarea::placeholder {
+        text-align: right; 
+        direction: rtl;
+    }
+    .contact .php-email-form textarea {
+        padding: 10px 12px;
+    }
+
+    .contact .php-email-form button {
+        background: #D98A29;
+        border: 0;
+        padding: 10px 35px;
+        color: #fff;
+        transition: 0.4s;
+        border-radius: 5px;
+    }
+
+        .contact .php-email-form button:hover {
+            background: #D98A29;
+        }
+
+        .btn-main2 {
+            background-color: #D98A29;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            width:50%;
+        }
+        .btn-main:hover {
+            background-color: #b56f20;
+            transform: scale(1.05);
+        }
+  
+        .contact form {
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background: #fff;
+            background-color: #EAE4CD;
+        }
+        .logoF {
+            width: 22vw;
+            height: 9vw;
+            margin-right: -7vw;
+        }
+
+        

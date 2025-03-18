@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>الريان - تبرعك ينقذ حياة</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="about.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet"  href="css/about.css">
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/img/logo.png" alt="الريان" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="/index.html">الصفحة الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="/donate.html">تبرع الآن</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="/Community.html">مجتمع الريّان</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="/about.html">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="/contact.html">تواصل معنا</a></li>
+                </ul>
+                <ul class="navbar-nav auth-buttons">
+                    <li class="nav-item" id="register-btn"><a class="nav-link btn-main" href="/regester.html">إنشاء حساب</a></li>
+                    <li class="nav-item" id="login-btn"><a class="nav-link btn-main" href="/login.html">تسجيل دخول</a></li>
+                    <li class="nav-item" id="account-btn" style="display: none;"><a class="nav-link btn-main" href="/profile.html">حسابي</a></li>
+                    <li class="nav-item" id="logout-btn" style="display: none;">
+                        <a class="nav-link btn-main" href="#" onclick="logout()">تسجيل خروج</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center hero-content">
+                <h1 class="hero-title" style="color: #D98A29;">ساهم في نشر الخير</h1><br><br>
+                <p class="hero-text" style="font-family: fustat-font; color:wheat;"  >
+                   
+                    لا تدع الفائض يضيع! تبرع بالطعام والملابس وساهم في إسعاد الأسر المحتاجة.  
+                    <br>
+                    قال ﷺ: <strong>"اتقوا النار ولو بشق تمرة"</strong>
+                </p><br><br>
+                <a href="./donate.html" class="btn btn-lg" style="background-color: #D98A29;">تبرع الآن</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- قسم عن الموقع -->
+<section id="about-us" class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="mb-4">عن موقع الريان</h2>
+                <p class="lead">
+                    موقع الريان هو مبادرة خيرية تهدف إلى جمع الطعام والملابس من المتبرعين وتوزيعها على المحتاجين. <br>
+                     نحن نؤمن أن العطاء هو وسيلة لإحداث فرق حقيقي في حياة الآخرين، <br>
+                    ومن خلال عملنا المشترك يمكننا بناء مجتمع متعاون يساهم في تحسين ظروف الآخرين.<br>
+                </p><br><br>
+                <p>
+                    في عالمنا اليوم، هناك الكثير من الأسر التي تعاني من قلة الموارد، ونحن هنا لنسد تلك الفجوة. من خلال موقع الريان، يمكن للجميع أن يكونوا جزءًا من هذا التغيير، سواء من خلال التبرع أو المشاركة في توزيع المساعدات.
+                </p>
+                <p class="font-italic"  style="color: #D98A29;">
+                    قال رسول الله صلى الله عليه وسلم: "من لا يُؤثِر الناس لا يُؤثِره الله".
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6">
+                <img src="" class="img-fluid rounded" >
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--فريقنا -->
+
+<section id="team" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="mb-4">فريقنا</h2>
+                <p class="lead">
+                    نحن فريق من المتطوعين المدفوعين بشغف لمساعدة الآخرين وتقديم يد العون للمحتاجين. من خلال عملنا المشترك، نسعى لبناء مجتمع أكثر تكافلاً.
+                </p>
+                <p>
+                    يساهم كل عضو في الفريق بخبراته وتفانيه لضمان نجاح هذه المبادرة وتحقيق أهدافنا الإنسانية.
+                </p>
+            </div>
+        </div>
+        
+        <!-- كاردات لأعضاء الفريق -->
+        <div class="row justify-content-center">
+            <!-- الكارد الأول -->
+            <div class="col-md-4 mb-4">
+                <div class="card team-card">
+                    <div class="card-img-wrapper" style="    margin-left: 40%;">
+                        <img src="/images/عضو1.jpg" class="card-img-top rounded-circle" >
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">سندس الرفاعي</h5>
+                        <p class="card-text">مسؤول التبرعات - يشرف على جمع التبرعات ويضمن وصولها للأشخاص المحتاجين.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الكارد الثاني -->
+            <div class="col-md-4 mb-4">
+                <div class="card team-card">
+                    <div class="card-img-wrapper"  style="    margin-left: 40%;">
+                        <img src="/images/عضو2.jpg" class="card-img-top rounded-circle" >
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">سارة العلي</h5>
+                        <p class="card-text">مدير التوزيع - مسؤولة عن تنظيم عملية توزيع التبرعات للمستفيدين.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الكارد الثالث -->
+            <div class="col-md-4 mb-4">
+                <div class="card team-card">
+                    <div class="card-img-wrapper"  style="    margin-left: 40%;">
+                        <img src="/images/عضو3.jpg" class="card-img-top rounded-circle" >
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">محمد جابر</h5>
+                        <p class="card-text">مبرمج الموقع - مسؤول عن تطوير وصيانة الموقع الإلكتروني للمبادرة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--الاراء-->
+
+
+<section id="testimonials" class="py-5 bg-light " >
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="mb-4" style="color: #D98A29;">آراء المتبرعين والمستفيدين</h2>
+                <p class="lead" style="color: #9D9584;">
+                    نحن في "الريان" نؤمن بأهمية المساهمة في تحسين حياة الآخرين. إليك بعض الآراء من المتبرعين والمستفيدين الذين تواصلوا معنا ليعبروا عن شكرهم ودعمهم.
+                </p>
+            </div>
+        </div>
+
+        <!-- الآراء -->
+        <div class="row justify-content-center">
+            <!-- كارد الرأي الأول -->
+            <div class="col-md-4 mb-4">
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #9D9584;">
+                            "شعرت بالسعادة الكبيرة حينما علمت أن تبرعاتي وصلت للأشخاص الذين يحتاجونها. هذه المبادرة تعطي الحياة معنى وتساعدنا في بناء مجتمع أفضل."
+                        </p>
+                        <h5 class="card-title" style="color: #D98A29;">أحمد يوسف</h5>
+                        <p class="card-subtitle" style="color: #9D9584;">متبرع</p><br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- كارد الرأي الثاني -->
+            <div class="col-md-4 mb-4">
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #9D9584;">
+                            "الحمد لله على هذه المبادرة الرائعة، فقد حصلت على المساعدة التي كنت بحاجة إليها في وقت كان الوضع فيه صعبًا جدًا. أشكر كل من ساعدني."
+                        </p><br>
+                        <h5 class="card-title" style="color: #D98A29;">مريم عبد الله</h5>
+                        <p class="card-subtitle" style="color: #9D9584;">مستفيدة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- كارد الرأي الثالث -->
+            <div class="col-md-4 mb-4">
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #9D9584;">
+                            "دعمكم كان له أثر كبير في حياتنا، وكلمات الشكر لا تكفي. أسأل الله أن يبارك في عملكم ويزيدكم من الخير."
+                        </p><br>
+                        <h5 class="card-title" style="color: #D98A29;">خالد حسن</h5>
+                        <p class="card-subtitle" style="color: #9D9584;">متبرع</p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- كيفية المساهمة Section -->
+<section id="how-to-donate" class="py-5  mt-5">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="mb-4" style="color: #D98A29;">كيف يمكنك المساهمة؟</h2>
+                <p class="lead" style="color: #9D9584;">
+                    يمكنكم المساهمة في جمع الطعام والملابس بكل سهولة. إليكم الخطوات البسيطة التي تساعدنا في توفير احتياجات المحتاجين.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="color: #9D9584;">
+            <!-- Step 1 -->
+            <div class="col-md-4" style="color: #9D9584;">
+                <div class="card mb-4 shadow-lg">
+                    <img src="/images/تبرع طعام.jpg" class="card-img-top" alt="تبرع بالطعام">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #D98A29;">1. تبرع بالطعام</h5>
+                        <p class="card-text" style="color: #9D9584;">إذا كان لديك طعام زائد أو جاهز للاستعمال، يمكنك التبرع به بسهولة وسنقوم بجمعه من مكانك.</p>
+                    </div><br>
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="col-md-4" >
+                <div class="card mb-4 shadow-lg">
+                    <img src="/images/تبرع ملابس.jpg" class="card-img-top" alt="تبرع بالملابس">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #D98A29;">2. تبرع بالملابس</h5>
+                        <p class="card-text" style="color: #9D9584;">تستطيع التبرع بالملابس القديمة التي لا تحتاجها، وسنقوم بتوصيلها للأسر المحتاجة.</p>
+                    </div><br>
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg">
+                    <img src="/images/تطوع.jpeg" class="card-img-top" alt="التطوع">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #D98A29;">3. التطوع</h5>
+                        <p class="card-text" style="color: #9D9584;" >إذا كنت ترغب في تقديم يد العون، يمكنك الانضمام كمتطوع للمساعدة في جمع وتوزيع التبرعات.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        
+    </div>
+    
+</section>
+<div class="col-lg-12 text-center ">
+    <a href="./donate.html" class="btn btn-lg " style="background-color: #D98A29; text-align: center">تبرع الآن</a>
+</div>
+
+
+<!-- <<!-- قسم الفيديو -->
+<section id="about-us-video" class="py-5 bg-light mt-5">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="mb-4" style="color: #D98A29;">أهمية التبرع بالطعام</h2>
+                <p class="lead" style="color: #9D9584;">
+                    في هذا الفيديو، نعرض لكم كيف يمكن للتبرع بالطعام أن يساعد في تحسين حياة الأسر المحتاجة، وكيف أن إسهامك البسيط يمكن أن يصنع فرقًا كبيرًا في مجتمعنا.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Video Embed (محلي) -->
+                <video width="100%" height="auto" controls>
+                    <source src="/images/videoplayback (online-video-cutter.com).mp4" type="video/mp4">
+                   
+                   
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="faq" class="py-5" >
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="mb-4">الأسئلة الشائعة</h2>
+             
+                <button class="accordion"  >كيف يمكنني التبرع؟</button>
+                <div class="panel">
+                  <p>يمكنك التبرع بسهولة عبر موقعنا الإلكتروني من خلال النقر على زر "تبرع الآن" وملء النموذج المتاح.</p>
+                </div>
+                
+                <button class="accordion">هل هناك حد أدنى للتبرعات؟</button>
+                <div class="panel">
+                  <p>لا، يمكنك التبرع بأي كمية ترغب بها حسب قدرتك.</p>
+                </div>
+                
+                <button class="accordion">هل يمكنني التبرع بالطعام الفائض؟</button>
+                <div class="panel">
+                  <p>نعم، نحن نقبل التبرعات بالطعام الفائض من المنازل والمطاعم والمخابز. نحرص على التأكد من أن الطعام آمن للاستهلاك.</p>
+                </div>
+                <button class="accordion">كيف يتم توزيع التبرعات؟</button>
+                <div class="panel">
+                  <p>نقوم بتوزيع التبرعات عبر شراكات مع منظمات محلية ومبادرات خيرية تعمل مباشرة مع المحتاجين.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+
+<footer class="footer mt-5 py-4" style="background-color: #D98A29; color: white;">
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col-md-3 mb-3 mb-md-0">
+                <img src="/images/logo.png" alt="الريان" class="logoF mb-2" >
+            </div>
+
+            <div class="col-md-6 mb-3 mb-md-0">
+                <ul class="list-inline" style="margin: 0; padding: 0;">
+                    <li class="list-inline-item mx-3"><a href="/about.html" class="text-white ">من نحن</a></li>
+                    <li class="list-inline-item mx-3"><a href="/contact.html" class="text-white ">تواصل معنا</a></li>
+                    <li class="list-inline-item mx-3"><a href="/donate.html" class="text-white ">تبرع الآن</a></li>
+                    <li class="list-inline-item mx-3"><a href="/Community.html" class="text-white ">مجتمع الريّان</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <p class="mb-1" style="color: white;">📧 contact@alrayyan.com</p>
+                <p class="mb-0" style="color: white;">📞 +962 79 123 4567</p>
+            </div>
+        </div>
+
+        <hr style="border-color: white;">
+        <p class="mb-0" style="color: white;">© 2025 جميع الحقوق محفوظة - منصة الريان</p>
+    </div>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<script src="/js/index.js"></script>
+
+</body>
+</html>
